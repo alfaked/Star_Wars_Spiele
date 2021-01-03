@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>STAR WARS - Wer bin ich?</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Assets/styles/overlay.css" />
+    <link rel="stylesheet" href="Assets/styles/body.css" />
+    <link rel="stylesheet" href="Assets/styles/spiel.css" />
+  </head>
+  <body>
+    <div id="umoverlay">
+      <div id="over" class="overlay">
+        <button class="erster btn" onclick="los()">SPIELEN</button>
+        <button class="zweiter btn" onclick="anleitung()">ANLEITUNG</button>
+      </div>
+    </div>
+    <header class="header">
+      <h1>STAR WARS - Wer bin ich?</h1>
+    </header>
+    <article id="article">
+      <header>
+        <h2>Bist du ein Droide?</h2>
+      </header>
+      <img onclick="droide()" class="antwort" src="Assets/Bilder/Ja.png" alt="ja">
+      <img onclick="person()" class="antwort" src="Assets/Bilder/Nein.png" alt="nein">
+    </article>
+    <script src="Assets/scripts/overlay.js"></script>
+    <script src="Assets/scripts/person.js"></script>
+    <script src="Assets/scripts/droide.js"></script>
+  </body>
+</html>
